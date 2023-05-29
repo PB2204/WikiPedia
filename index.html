@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" type="module"></script>
+    <title>SearchMe</title>
+</head>
+
+<body>
+    <main>
+        <h1 class="offscreen">Search Me A Wikipedia Powered Search Engine</h1>
+        <section class="searchEntry">
+            <h2 class="offscreen">Search Term Entry</h2>
+            <div class="logo" aria-hidden="true" style="font-family: cursive">
+                <span class="blue"> W</span>
+                <span class="red">i</span>
+                <span class="yellow">k</span>
+                <span class="blue">i</span>
+                <span class="green">P</span>
+                <span class="red">e</span>
+                <span class="blue">d</span>
+                <span class="yellow">i</span>
+                <span class="red exclaim">a</span>
+            </div>
+            <form id="searchBar" class="searchBar" role="search">
+                <label class="offscreen" for="search">Enter a search term or phrase</label>
+                <input id="search" type="text" autocomplete="off" role="searchbox" />
+                <div id="clear" class="none button clear" role="button" tabindex="0" aria-label="Clear search terms">
+                    <i class="fas fa-times"></i>
+                </div>
+                <button id="searchButton" class="button searchButton" type="submit" aria-label="Submit button">
+                    <i class="fas fa-search blue"></i>
+                </button>
+            </form>
+        </section>
+        <section class="results">
+            <h2 class="offscreen">Search Results</h2>
+            <div class="statsBar">
+                <div id="stats" class="stats" aria-live="assertive"></div>
+            </div>
+            <div id="searchResults" class="searchResults"></div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            <span aria-hidden="true"></span>
+            <span style="color: black">Copyright <span style="color: #14c5f1">&copy;</span> 2023</span><span
+                style="color: #14c5f1"> || </span><span style="color: #111111">Developed By</span>
+            <a href="https://pabitrabanerjee.newsgoogle.org" target="_blank"
+                style="text-decoration: none; color: crimson; font-family: cursive">Pabitra Banerjee</a>
+            <span style="color: #14c5f1"> :: </span>
+            <span aria-hidden="true"></span>
+            <span style="color: black">Powered by</span>
+            <a href="https://www.wikipedia.org" target="_blank"
+                style="text-decoration: none; color: #8514dc; font-family: cursive">Wikipedia</a>
+        </p>
+    </footer>
+</body>
+
+</html>
